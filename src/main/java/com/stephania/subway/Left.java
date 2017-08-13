@@ -18,10 +18,10 @@ public class Left implements Command{
                 subway.setDirection(Direction.WEST);
                 break;
             case EAST:
-                subway.setDirection(Direction.SOUTH);
+                subway.setDirection(Direction.NORTH);
                 break;
             case WEST:
-                subway.setDirection(Direction.NORTH);
+                subway.setDirection(Direction.SOUTH);
                 break;
             case SOUTH:
                 subway.setDirection(Direction.EAST);

@@ -17,10 +17,10 @@ public class Right implements Command {
                 subway.setDirection(Direction.EAST);
                 break;
             case EAST:
-                subway.setDirection(Direction.NORTH);
+                subway.setDirection(Direction.SOUTH);
                 break;
             case WEST:
-                subway.setDirection(Direction.SOUTH);
+                subway.setDirection(Direction.NORTH);
                 break;
             case SOUTH:
                 subway.setDirection(Direction.WEST);

@@ -19,8 +19,17 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here  
         List<Command> commandList = new ArrayList<>();
+        commandList.add(new Left());
+        commandList.add(new Move());
         commandList.add(new Right());
         commandList.add(new Down());
+        commandList.add(new Down());
+        commandList.add(new Move());
+        commandList.add(new Move());
+        commandList.add(new Up());
+        commandList.add(new Up());
+        
+        
        
         Subway subway = new Subway();
         subway.executeCommand(commandList);
