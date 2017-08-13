@@ -9,6 +9,22 @@ package com.stephania.subway;
  *
  * @author stephania
  */
-public class Right {
-    
+public class Right implements Command {
+     @Override
+    public void action(Subway subway) {
+        switch (subway.getDirection()) {
+            case NORTH:
+                subway.setDirection(Direction.EAST);
+                break;
+            case EAST:
+                subway.setDirection(Direction.NORTH);
+                break;
+            case WEST:
+                subway.setDirection(Direction.SOUTH);
+                break;
+            case SOUTH:
+                subway.setDirection(Direction.WEST);
+                break;
+        }           
+    }
 }

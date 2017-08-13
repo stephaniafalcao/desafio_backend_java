@@ -15,7 +15,7 @@ public class Left implements Command{
     public void action(Subway subway) {
         switch (subway.getDirection()) {
             case NORTH:
-                subway.setDirection(Direction.EAST);
+                subway.setDirection(Direction.WEST);
                 break;
             case EAST:
                 subway.setDirection(Direction.SOUTH);
@@ -24,7 +24,7 @@ public class Left implements Command{
                 subway.setDirection(Direction.NORTH);
                 break;
             case SOUTH:
-                subway.setDirection(Direction.WEST);
+                subway.setDirection(Direction.EAST);
                 break;
         }           
     }
