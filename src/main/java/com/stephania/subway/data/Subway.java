@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway;
+package com.stephania.subway.data;
 
+import com.stephania.subway.command.Direction;
+import com.stephania.subway.command.Command;
 import java.util.List;
 
 /**

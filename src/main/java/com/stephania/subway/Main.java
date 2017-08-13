@@ -5,6 +5,16 @@
  */
 package com.stephania.subway;
 
+import com.stephania.subway.data.Subway;
+import com.stephania.subway.command.Move;
+import com.stephania.subway.command.Right;
+import com.stephania.subway.command.Up;
+import com.stephania.subway.command.Left;
+import com.stephania.subway.command.Down;
+import com.stephania.subway.command.Command;
+import com.stephania.subway.exception.CommandNotFoundException;
+import com.stephania.subway.exception.NotNullOrEmptyException;
+import com.stephania.subway.factory.CommandFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,21 +28,21 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here  
-        List<Command> commandList = new ArrayList<>();
-        commandList.add(new Left());
-        commandList.add(new Move());
-        commandList.add(new Right());
-        commandList.add(new Down());
-        commandList.add(new Down());
-        commandList.add(new Move());
-        commandList.add(new Move());
-        commandList.add(new Up());
-        commandList.add(new Up());
+        try {
+            String command = "LMRDDMMUU";
+            List<Command> commandList = CommandFactory.buildCommand(command);
+            Subway subway = new Subway();
+            subway.executeCommand(commandList);
+            System.out.println(subway);
+        } catch (NotNullOrEmptyException e) {
+            System.err.println(e.getMessage());
+        } catch (CommandNotFoundException e) {
+            System.err.println(e.getMessage());
+        } catch (Exception e) {
+            System.err.println("Erro não mapeado");
+        }
         
         
-       
-        Subway subway = new Subway();
-        subway.executeCommand(commandList);
-        System.out.println(subway);
+        
     }
 }

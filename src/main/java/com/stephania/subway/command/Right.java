@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway;
+package com.stephania.subway.command;
+
+import com.stephania.subway.data.Subway;
+import com.stephania.subway.command.Direction;
+import com.stephania.subway.command.Command;
 
 /**
  *

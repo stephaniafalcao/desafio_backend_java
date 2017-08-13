@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway;
+package com.stephania.subway.exception;
 
 /**
  *
  * @author stephania
  */
-public interface Command {
-    public void action(Subway subway);   
+public class NotNullOrEmptyException extends Exception {
+
+    public NotNullOrEmptyException() {
+        super("Valor não pode ser vazio ou nulo");
+    }    
 }
