@@ -21,7 +21,7 @@ public class Main {
         List<Command> commandList = new ArrayList<>();
         commandList.add(new Right());
         commandList.add(new Down());
-        
+       
         Subway subway = new Subway();
         subway.executeCommand(commandList);
         System.out.println(subway.getZ());

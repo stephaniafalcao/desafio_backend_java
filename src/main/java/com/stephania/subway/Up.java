@@ -9,6 +9,9 @@ package com.stephania.subway;
  *
  * @author stephania
  */
-public class Up {
-    
+public class Up implements Command{
+    @Override
+    public void action(Subway subway) {        
+        subway.setZ(subway.getZ() + 1);
+    }
 }

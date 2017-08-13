@@ -69,7 +69,9 @@ public class Subway {
      * @param z the z to set
      */
     public void setZ(int z) {
-        this.z = z;
+        if (z <= 0) {
+            this.z = z;
+        }
     }
 
     /**
