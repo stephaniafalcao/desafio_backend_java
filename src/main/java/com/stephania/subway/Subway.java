@@ -5,6 +5,8 @@
  */
 package com.stephania.subway;
 
+import java.util.List;
+
 /**
  *
  * @author stephania
@@ -20,6 +22,12 @@ public class Subway {
         z = 0;
         
         direction = Direction.NORTH;
+    }
+    
+    public void executeCommand(List<Command> commandList) {
+        for(Command command : commandList) {
+            command.action(this);
+        }
     }
 
     /**
