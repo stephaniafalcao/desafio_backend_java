@@ -10,5 +10,5 @@ package com.stephania.subway;
  * @author stephania
  */
 public interface Command {
-    public void action();   
+    public void action(Subway subway);   
 }
