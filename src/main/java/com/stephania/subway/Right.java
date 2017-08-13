@@ -10,7 +10,7 @@ package com.stephania.subway;
  * @author stephania
  */
 public class Right implements Command {
-     @Override
+    @Override
     public void action(Subway subway) {
         switch (subway.getDirection()) {
             case NORTH:

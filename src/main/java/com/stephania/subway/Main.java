@@ -20,10 +20,10 @@ public class Main {
         // TODO code application logic here  
         List<Command> commandList = new ArrayList<>();
         commandList.add(new Right());
-        //commandList.add(new Left());
+        commandList.add(new Down());
         
         Subway subway = new Subway();
         subway.executeCommand(commandList);
-        System.out.println(subway.getDirection());
+        System.out.println(subway.getZ());
     }
 }
