@@ -30,6 +30,13 @@ public class Subway {
         }
     }
 
+    @Override
+    public String toString() {
+        return this.x + " " + this.y + " " + this.z + " " + this.direction;   
+    }
+    
+    
+
     /**
      * @return the x
      */

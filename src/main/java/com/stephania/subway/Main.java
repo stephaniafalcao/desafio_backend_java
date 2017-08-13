@@ -24,6 +24,6 @@ public class Main {
        
         Subway subway = new Subway();
         subway.executeCommand(commandList);
-        System.out.println(subway.getZ());
+        System.out.println(subway);
     }
 }
