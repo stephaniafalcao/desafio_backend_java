@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway.data;
+package com.stephania.submarine.data;
 
-import com.stephania.subway.command.Direction;
-import com.stephania.subway.command.Command;
+import com.stephania.submarine.command.Direction;
+import com.stephania.submarine.command.Command;
 import java.util.List;
 
 /**
  *
  * @author stephania
  */
-public class Subway {
+public class Submarine {
     private int x, y, z;
     private Direction direction;
     
     // Todo submarino começa com as coordenadas (0,0,0,North)
-    public Subway() {
+    public Submarine() {
         x = 0;
         y = 0;
         z = 0;

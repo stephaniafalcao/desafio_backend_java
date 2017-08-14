@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway.command;
+package com.stephania.submarine.command;
 
-import com.stephania.subway.data.Subway;
-import com.stephania.subway.command.Command;
+import com.stephania.submarine.data.Submarine;
+import com.stephania.submarine.command.Command;
 
 /**
  *
@@ -14,19 +14,19 @@ import com.stephania.subway.command.Command;
  */
 public class Move implements Command{
     @Override
-    public void action(Subway subway) {        
-        switch (subway.getDirection()) {
+    public void action(Submarine submarine) {        
+        switch (submarine.getDirection()) {
             case NORTH:
-                subway.setY(subway.getY() + 1);
+                submarine.setY(submarine.getY() + 1);
                 break;
             case EAST:
-                subway.setX(subway.getX() + 1);
+                submarine.setX(submarine.getX() + 1);
                 break;
             case WEST:
-                subway.setX(subway.getX() - 1);
+                submarine.setX(submarine.getX() - 1);
                 break;
             case SOUTH:
-                subway.setY(subway.getY() - 1);
+                submarine.setY(submarine.getY() - 1);
                 break;
         }   
     }

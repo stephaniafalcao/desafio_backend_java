@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway;
+package com.stephania.submarine;
 
-import com.stephania.subway.data.Subway;
-import com.stephania.subway.command.Move;
-import com.stephania.subway.command.Right;
-import com.stephania.subway.command.Up;
-import com.stephania.subway.command.Left;
-import com.stephania.subway.command.Down;
-import com.stephania.subway.command.Command;
-import com.stephania.subway.exception.CommandNotFoundException;
-import com.stephania.subway.exception.NotNullOrEmptyException;
-import com.stephania.subway.factory.CommandFactory;
+import com.stephania.submarine.data.Submarine;
+import com.stephania.submarine.command.Move;
+import com.stephania.submarine.command.Right;
+import com.stephania.submarine.command.Up;
+import com.stephania.submarine.command.Left;
+import com.stephania.submarine.command.Down;
+import com.stephania.submarine.command.Command;
+import com.stephania.submarine.exception.CommandNotFoundException;
+import com.stephania.submarine.exception.NotNullOrEmptyException;
+import com.stephania.submarine.factory.CommandFactory;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,9 +31,9 @@ public class Main {
         try {
             String command = "LMRDDMMUU";
             List<Command> commandList = CommandFactory.buildCommand(command);
-            Subway subway = new Subway();
-            subway.executeCommand(commandList);
-            System.out.println(subway);
+            Submarine submarine = new Submarine();
+            submarine.executeCommand(commandList);
+            System.out.println(submarine);
         } catch (NotNullOrEmptyException e) {
             System.err.println(e.getMessage());
         } catch (CommandNotFoundException e) {

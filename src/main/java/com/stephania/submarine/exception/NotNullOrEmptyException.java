@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway.command;
+package com.stephania.submarine.exception;
 
 /**
  *
  * @author stephania
  */
-public enum Direction {
-    NORTH, SOUTH, EAST, WEST;
+public class NotNullOrEmptyException extends Exception {
+
+    public NotNullOrEmptyException() {
+        super("Valor não pode ser vazio ou nulo");
+    }    
 }

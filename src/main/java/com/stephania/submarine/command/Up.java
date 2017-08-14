@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.stephania.subway.command;
+package com.stephania.submarine.command;
 
-import com.stephania.subway.data.Subway;
-import com.stephania.subway.command.Command;
+import com.stephania.submarine.data.Submarine;
+import com.stephania.submarine.command.Command;
 
 /**
  *
@@ -14,7 +14,7 @@ import com.stephania.subway.command.Command;
  */
 public class Up implements Command{
     @Override
-    public void action(Subway subway) {        
-        subway.setZ(subway.getZ() + 1);
+    public void action(Submarine submarine) {        
+        submarine.setZ(submarine.getZ() + 1);
     }
 }
