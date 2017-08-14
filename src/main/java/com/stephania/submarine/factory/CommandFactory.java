@@ -21,6 +21,11 @@ import java.util.List;
  * @author stephania
  */
 public class CommandFactory {
+    /**
+     * Recebe uma String de comando e gera uma lista de classes de comando
+     * @param comando a ser utilizado
+     * @return lista de classes de comando
+    */
     public static List<Command> buildCommand(String command) throws Exception {
         
         if ((command == null) || (command.isEmpty())) {
@@ -42,6 +47,11 @@ public class CommandFactory {
         return commandList;
     }
     
+    /**
+     * Recebe um char e valida o comando
+     * @param comando a ser testado
+     * @return true se válido e false pros demais casos não cobertos
+    */
     private static boolean validateCommand(char charCommand) {
         
         switch (charCommand) {
@@ -60,6 +70,11 @@ public class CommandFactory {
         }
     }
     
+    /**
+     * Recebe um char e retorna a classe de comando correspondente
+     * @param comando a ser transformado
+     * @return classe do comando correspondente, se existente, ou exceção em caso contrário.
+    */
     private static Command buildCommand(char charCommand) throws Exception {
         switch (charCommand) {
             case 'R' :

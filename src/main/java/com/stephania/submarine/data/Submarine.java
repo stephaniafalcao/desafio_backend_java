@@ -75,6 +75,7 @@ public class Submarine {
     }
 
     /**
+     * Garante que Z assuma somente valores negativos
      * @param z the z to set
      */
     public void setZ(int z) {
