@@ -40,7 +40,7 @@ public class Subway {
     
 
     /**
-     * @return the x
+     * @return the xAssert
      */
     public int getX() {
         return x;
