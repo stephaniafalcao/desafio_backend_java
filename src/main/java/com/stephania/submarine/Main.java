@@ -29,7 +29,7 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here  
         try {
-            String command = "LMRDDMMUU";
+            String command = "RRMDU";
             List<Command> commandList = CommandFactory.buildCommand(command);
             Submarine submarine = new Submarine();
             submarine.executeCommand(commandList);
